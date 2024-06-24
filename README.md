@@ -1,1 +1,1 @@
-# MangaSun
+# MangaSun 太陽
