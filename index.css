@@ -1,0 +1,44 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background: gainsboro;
+}
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+        header div {
+            width: 100%;
+        }
+
+        header #navigation {
+            background: red;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            #navigation figure {
+                height: 5vh;
+                width: 5vh;
+                margin: 0;
+                padding: 0;
+                background: yellow;
+            }
+
+            #navigation .buttons {
+                height: 5vh;
+                width: 5vh;
+                background: yellow;
+                justify-self: end;
+            }
+
+
+        header #trending {
+            background: blue;
+            height: 3vh;
+        }
