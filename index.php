@@ -14,14 +14,15 @@
 
     <header>
 
-        <div id="navigation">
-            <figure>
-                <img src="" alt="logoMS"/>
-            </figure>
-            <div class="buttons">
-                Log in
-                Sign in
-            </div>
+        <div id="main-bar">
+
+            <img id="logo" src="resources/logos/mangasun-logo.png"/>
+            
+            <form id="search-bar" action="/search" method="get">
+                <input type="text" id="search-input" name="q" placeholder="Rechercher...">
+                <!-- <button type="submit"> Rechercher </button> -->
+            </form>
+
         </div>
         <div id="trending"> One piece - Naruto - Bleach </div>
 
