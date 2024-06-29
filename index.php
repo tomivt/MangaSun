@@ -16,17 +16,48 @@
 
         <div id="main-bar">
 
-            <img id="logo" src="resources/logos/mangasun-logo.png"/>
-            
-            <form id="search-bar" action="/search" method="get">
-                <input type="text" id="search-input" name="q" placeholder="Rechercher...">
-                <!-- <button type="submit"> Rechercher </button> -->
+            <div id="profile">
+                <button>
+                    <img src="resources/images/profile-icon.webp" alt="profile-icon">
+                </button>
+                <button>
+                    <img src="resources/images/favorite-icon.png" alt="favorite-icon">
+                </button>
+                <button>
+                    <img src="resources/images/collection-icon.png" alt="collection-icon">
+                </button>
+            </div>
+
+            <img id="logo" src="resources/logos/mangasun-logo.png" alt="MangaSun logo"/>
+
+            <form action="includes/search.php" method="get">
+                <label>
+                    <input type="text" name="query" placeholder="Search ...">
+                    <button id="search-button" type="submit">
+                        <img id="search-icon" src="resources/images/search-icon.png" alt="search button"/>
+                    </button>
+                </label>
             </form>
 
         </div>
-        <div id="trending"> One piece - Naruto - Bleach </div>
 
     </header>
+
+    <div id="content-box">
+
+        <div class="side-bar">
+
+        </div>
+
+        <div id="mid-box">
+
+        </div>
+
+        <div class="side-bar">
+
+        </div>
+
+    </div>
 
 </body>
 
