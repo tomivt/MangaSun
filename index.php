@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <!-- Logo <link rel="icon" href="logo.png" type="image/png"> -->
     <title> MangaSun - Tommy NGUYEN </title>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <div id="main-bar">
 
             <div id="profile">
-                <button>
+                <button id="profile-button">
                     <img src="resources/images/profile-icon.webp" alt="profile-icon">
                 </button>
                 <button>
@@ -30,7 +31,7 @@
 
             <img id="logo" src="resources/logos/mangasun-logo.png" alt="MangaSun logo"/>
 
-            <form action="includes/search.php" method="get">
+            <form id="search-form" action="includes/search.php" method="get">
                 <label>
                     <input type="text" name="query" placeholder="Search ...">
                     <button id="search-button" type="submit">
@@ -55,6 +56,28 @@
 
         <div class="side-bar">
 
+        </div>
+
+    </div>
+
+    <div id="connexion-box" class="hidden">
+
+        <form id="connexion-form" method="post">
+
+            <label>
+                <input type="text" name="pseudo" placeholder="Enter your pseudo ..." required>
+                <input type="text" name="first-name" placeholder="Enter your first name ..." required>
+                <input type="text" name="last-name" placeholder="Enter your last name ..." required>
+                <input type="email" name="email" placeholder="Enter your email ..." required>
+            </label>
+
+        </form>
+
+        <div>
+            <button id="back-button">
+                <img src="resources/images/back-icon.svg" alt="back-icon">
+            </button>
+            <button type="submit" form="connexion-form"> Sign in </button>
         </div>
 
     </div>
