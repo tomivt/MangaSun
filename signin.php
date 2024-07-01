@@ -59,7 +59,7 @@
 
     <div id="main-bar">
 
-        <img id="logo" src="resources/logos/inscription-logo.png" alt="MangaSun logo"/>
+        <img id="logo" src="resources/logos/inscription-logo.png" alt="Inscription logo"/>
 
     </div>
 
@@ -101,11 +101,13 @@
             </div>
 
             <div id="button-box">
-                <button> Log In </button>
-                <button id="back-button" onclick="location.href='index.php'">
-                    <img src="resources/images/back-icon.svg" alt="back-icon">
-                </button>
-                <button id="signin-button" name="signin-button" type="submit" form="signin-form"> Sign In </button>
+                <div>
+                    <button onclick="location.href='login.php'"> Log In </button>
+                    <button id="back-button" onclick="location.href='index.php'">
+                        <img src="resources/images/back-icon.svg" alt="back-icon">
+                    </button>
+                    <button id="signin-button" name="signin-button" type="submit" form="signin-form"> Sign In </button>
+                </div>
             </div>
 
         </div>

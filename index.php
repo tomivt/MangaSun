@@ -1,3 +1,11 @@
+<?php session_start();
+
+if (!isset($_SESSION['pseudo'])) {
+    header("Location: login.php");
+    exit;
+
+}?>
+
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -29,6 +37,7 @@
                 <button>
                     <img src="resources/images/collection-icon.png" alt="collection-icon">
                 </button>
+                <span> <?php echo htmlspecialchars($_SESSION['pseudo']); ?> </span>
             </div>
 
             <img id="logo" src="resources/logos/mangasun-logo.png" alt="MangaSun logo"/>
