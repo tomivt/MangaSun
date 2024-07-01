@@ -2,9 +2,17 @@
 document.addEventListener("DOMContentLoaded", function() {
     const profileButton = document.getElementById("profile-button");
     const backButton = document.getElementById("back-button");
-    const connexionBox = document.getElementById("connexion-box");
-    const signInButton = document.getElementById("signin-button")
-    const signInForm = document.getElementById("signin-form")
+    const profileBox = document.getElementById("profile-box");
     const html = document.documentElement;
+
+    profileButton.addEventListener("click", function () {
+        html.style.overflow = "hidden";
+        profileBox.style.display = "flex"
+    })
+
+    backButton.addEventListener("click", function () {
+        html.style.overflow = "scroll";
+        profileBox.style.display = "none"
+    })
 
 });

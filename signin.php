@@ -1,4 +1,5 @@
 <?php
+session_start();
 
     $errors = [];
 
@@ -34,6 +35,8 @@
                 'email' => $email,
                 'password' => $hpassword
             ]);
+
+            $_SESSION['pseudo'] = $pseudo;
 
             header("Location: index.php");
             exit();
